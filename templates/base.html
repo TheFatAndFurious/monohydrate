@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-full flex">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <script src="/static/css/script.js"></script>
+    <title>{{.Title}}</title>
+  </head>
+  <body class="bg-gray-400 min-h-full grow">
+    {{template "header" .}}
+    <main
+      class="lg:max-w-screen-lg mx-auto bg-slate-300 px-10 py-40 min-h-full flex items-center"
+    >
+      {{template "content" .}}
+    </main>
+  </body>
+</html>
